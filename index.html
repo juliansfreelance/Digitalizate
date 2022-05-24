@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <meta name='author' href="https://github.com/juliansfreelance" email="juliansfreelance@gmail.com" content='Julio Cesar Calderón García - Desarrollador y Diseñador Web'>
+    <meta name="description" content="Demostración AES (Advanced Encryption Standard) - Seguridad de la información">
+
+    <link rel="icon" type="image/x-icon" href="public/img/logoDigitalizate.png">
+    <link rel="stylesheet" href="public/css/tailwind.css">
+
+    <title>Digitalízate</title>
+</head>
+
+<body class="antialiased h-full w-full bg-gray-100">
+<div class="flex flex-col min-h-screen">
+    <header class="z-20 w-full fixed">
+        <div class="bg-gray-900 bg-opacity-90">
+            <!-- <div class="container mx-auto py-4 relative flex flex-col items-center w-full justify-center">
+                <p class="text-gray-100 text-center text-xl2 ml-3 font-bold">Laboratorio AES (Advanced Encryption Standard)</p>
+            </div> -->
+            <div class="container mx-auto py-2 relative flex flex-row items-center w-full justify-center">
+                <img src="public/img/logoDigitalizate.png" alt="Digitalízate" class="h-12">
+                <p class="text-gray-100 text-center text-4xl ml-3 font-bold"> Digitalízate</p>
+            </div>
+        </div>
+    </header>
+    <main class="flex-grow z-0">
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <div class="relative pt-16">
+                <!-- <iframe  src="https://www.youtube.com/..."></iframe> -->
+                <iframe class="w-full aspect-video mt-12" src="https://www.youtube.com/embed/NA47TVEHOAI" title="digitalÍzate"
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+
+                    <div class="py-5">
+                        <div class="border-t border-gray-200"></div>
+                    </div>
+                    
+                <h3 class="font-bold text-2xl text-center text-gray-700 mt-8 mb-4 uppercase titulo">Brecha Digital</h3>
+
+
+                <p class="px-6 leading-tight text-gray-800 text-justify">
+                    Hace referencia a la <strong>diferencia socioeconómica</strong> entre aquellas comunidades que tienen accesibilidad a las TIC y aquellas
+                    que no, y también hace referencia a las diferencias que hay entre grupos según su <strong>capacidad para utilizar las TIC</strong> de
+                    forma eficaz, debido a los distintos niveles de alfabetización y capacidad tecnológica.
+                </p>
+                <p class="px-6 pt-4 leading-tight text-gray-800 text-justify">En consecuencia, las definiciones de Brecha Digital coinciden en las diferencias o desigualdades que se presentan en el
+                acceso, uso y apropiación de las Tecnologías de la Información y las Comunicaciones (TIC) entre los ciudadanos de las
+                diferentes regiones del país; dicha apropiación está determinada por cuatro dimensiones: el grado de motivación, el
+                acceso material, el dominio de habilidades digitales y el aprovechamiento que se da a estas tecnologías.</p>
+
+                <div class="mt-12">
+                    <div class="md:grid md:grid-cols-12 md:gap-6 mb-8">
+                        <div class="mt-5 md:mt-0 md:col-start-2 md:col-span-10 md:rounded-md shadow">
+                            <div class="flex items-center px-4 sm:px-6 pt-4 pb-3 bg-white border-b border-bluegray-200 rounded-md">
+                                <img src="public/img/bdd.png" alt="Brecha Digital Multidimensional">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="py-5">
+                    <div class="border-t border-gray-200"></div>
+                </div>
+
+                <h3 class="font-bold text-2xl text-center text-gray-700 mt-8 mb-4 uppercase titulo">MOTIVACIÓN</h3>
+                <p class="px-6 leading-tight text-gray-800 text-justify">
+                    Esta dimensión permite discernir acerca de los motivos detrás de cada individuo ante la decisión de uso o no de las TIC.<br>
+                    Hace referencia a las percepciones de los individuos que determinan esta decisión.
+                </p>
+                <p class="px-6 pt-4 leading-tight text-gray-800 text-justify">Esta percepción puede deberse a diversos factores sociales, personales o de su entorno; algunos ejemplos son: la falta
+                de tiempo, la valoración social desfavorable de las TIC, una percepción de utilidad limitada, tecnofobia, entre otros
+                <br>Los elementos que componen esta dimensión consideran:
+                <ul class="ml-8 px-6 pt-4 leading-tight text-gray-800 text-justify list-disc list-outside">
+                    <li class="pb-2"><strong>Las barreras mentales o psicológicas:</strong> ¿qué genera que las personas sientan aversión al uso de determinada tecnología?</li>
+                    <li class="pb-2"><strong>La utilidad percibida:</strong> ¿qué ofrece la tecnología que motive a las personas a acceder a ella, aprender a usarla o darle
+                    un uso significativo en sus vidas?</li>
+                    <li class="pb-2"><strong>La percepción social de los beneficios o perjuicios de la tecnología:</strong> ¿los modelos mentales compartidos por un grupo
+                    social pueden afectar el que alguien se motive o limite a interactuar con una tecnología?</li>
+                    <li class="pb-2"><strong>El desconocimiento:</strong> ¿falta de información acerca de la existencia o comprensión de las TIC?
+                    </li>
+                </ul>
+                </p>
+                
+                <div class="mt-12">
+                    <div class="md:grid md:grid-cols-12 md:gap-6 mb-8">
+                        <div class="mt-5 md:mt-0 md:col-start-2 md:col-span-10 md:rounded-md shadow">
+                            <div class="flex items-center px-4 sm:px-6 pt-4 pb-3 bg-white border-b border-bluegray-200 rounded-md">
+                                <img src="public/img/bdm.png" alt="Brecha Digital Multidimensional">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="py-5">
+                    <div class="border-t border-gray-200"></div>
+                </div>
+
+                <h3 class="font-bold text-2xl text-center text-gray-700 mt-8 mb-4 uppercase titulo">ACCESO MATERIAL</h3>
+                <p class="px-6 leading-tight text-gray-800 text-justify">
+                    Esta es la dimensión más analizada por la literatura y estudios anteriores, por cuanto centra el análisis en la
+                    posibilidad material de acceso a las TIC. Sin embargo, anteriormente se enfocaba exclusivamente en indicadores de
+                    cobertura (telefonía fija, móvil, internet, etc.)
+                </p>
+                <p class="px-6 pt-4 leading-tight text-gray-800 text-justify">Esta percepción puede deberse a diversos factores
+                    Esta dimensión tiene que ver, no solo con la disponibilidad de servicios e infraestructura (o canales) necesarios para
+                    la conexión y el uso de las funcionalidades de las TIC, sino de los dispositivos tecnológicos (o terminales) que
+                    permiten el acceso. Usualmente este tipo de acceso también puede estar relacionado con las condiciones socioeconómicas
+                    que determinan el poder adquisitivo de las personas y a asequibilidad económica de las TIC.<br> Los elementos que componen esta dimensión consideran:
+                <ul class="ml-8 px-6 pt-4 leading-tight text-gray-800 text-justify list-disc list-outside">
+                    <li class="pb-2"><strong>Acceso a canales:</strong> ¿Se tiene acceso a los servicios públicos o privados necesarios para utilizar una tecnología? ¿Se
+                    tiene acceso a los medios, cobertura o conexiones de red necesarios para intercambiar información entre diferentes
+                    terminales de una tecnología? ¿Se tiene acceso a las suscripciones necesarias para acceder a información adicional o
+                    especifica en una tecnología?</li>
+                    <li class="pb-2"><strong>cceso a terminales:</strong> ¿Se tiene acceso al hardware necesario para utilizar una tecnología? ¿Se tiene acceso al software
+                    necesario para utilizar y/o acceder a la visualización o modificación de un contenido específico por medio de una
+                    tecnología?</li>
+                    <li class="pb-2"><strong>Características de acceso a los canales/terminales:</strong> ¿cómo se accede a los canales o terminales? ¿cuál es la calidad de
+                    los servicios de telecomunicaciones?
+                    </li>
+                </ul>
+                </p>
+                
+                <div class="mt-12">
+                    <div class="md:grid md:grid-cols-12 md:gap-6 mb-8">
+                        <div class="mt-5 md:mt-0 md:col-start-2 md:col-span-10 md:rounded-md shadow">
+                            <div class="flex items-center px-4 sm:px-6 pt-4 pb-3 bg-white border-b border-bluegray-200 rounded-md">
+                                <img src="public/img/bda.png" alt="Brecha Digital Multidimensional">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="py-5">
+                    <div class="border-t border-gray-200"></div>
+                </div>
+
+                <h3 class="font-bold text-2xl text-center titulo mt-8 mb-4 uppercase">HABILIDADES DIGITALES</h3>
+                <p class="px-6 leading-tight text-gray-800 text-justify">
+                    Este es uno de los elementos que recientemente han incluido los estudios relacionados. Consiste en la posibilidad de
+                    establecer si los individuos cuentan con las cualificaciones necesarias para operar o usar las tecnologías.
+                </p>
+                <p class="px-6 pt-4 leading-tight text-gray-800 text-justify">Esta dimensión también se le conoce, o es llamada por otros autores, como alfabetización digital o capital digital.
+                <br>Los elementos que componen esta dimensión son:
+                <ul class="ml-8 px-6 pt-4 leading-tight text-gray-800 text-justify list-disc list-outside">
+                    <li class="pb-2"><strong>Habilidades operacionales:</strong> ¿la persona es capaz de llevar a cabo las acciones necesarias para operar el medio digital?</li>
+                    <li class="pb-2"><strong>Habilidades formales:</strong> ¿la persona es capaz de manejar las estructuras formales del medio digital, es decir, aquellas que permiten que se utilice la tecnología con el propósito para el cual fue diseñada?</li>
+                    <li class="pb-2"><strong>Habilidades informacionales:</strong> ¿la persona es capaz de buscar, seleccionar y evaluar la información en el medio digital?</li>
+                    <li class="pb-2"><strong>Habilidades comunicativas:</strong> ¿la persona es capaz de poder comunicarse a través de un medio digital?</li>
+                    <li class="pb-2"><strong>Habilidades de programación y desarrollo digital:</strong> ¿la persona es capaz de crear, editar y hacer contribuciones a unmedio digital con un objetivo particular?</li>
+                </ul>
+                </p>
+                
+                <div class="mt-12">
+                    <div class="md:grid md:grid-cols-12 md:gap-6 mb-8">
+                        <div class="mt-5 md:mt-0 md:col-start-2 md:col-span-10 md:rounded-md shadow">
+                            <div class="flex items-center px-4 sm:px-6 pt-4 pb-3 bg-white border-b border-bluegray-200 rounded-md">
+                                <img src="public/img/bdh.png" alt="Brecha Digital Multidimensional">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="py-5">
+                    <div class="border-t border-gray-200"></div>
+                </div>
+
+                <h3 class="font-bold text-2xl text-center titulo mt-8 mb-4 uppercase">APROVECHAMIENTO</h3>
+                <p class="px-6 leading-tight text-gray-800 text-justify">
+                    Esta dimensión puede resultar siendo la más subjetiva de las dimensiones, puesto que supone un beneficio diferente del
+                    uso de las TIC, que con frecuencia se ve reflejado en el incremento de distintos capitales, como el social, económico y
+                    cultural, entre otros. Sin embargo, el aprovechamiento de las TIC también se puede determinar por:
+                    <ul class="ml-8 px-6 pt-4 leading-tight text-gray-800 text-justify list-disc list-outside">
+                        <li class="pb-2"><strong>Frecuencia de uso:</strong> ¿cada cuánto tiempo se utiliza la tecnología?</li>
+                        <li class="pb-2"><strong>Intensidad de uso: </strong> ¿por cuánto tiempo se utiliza la tecnología?</li>
+                        <li class="pb-2"><strong>Diversidad de propósitos:</strong> ¿para qué actividades se utiliza la tecnología?</li>
+                    </ul>
+                <p class="px-6 pt-4 leading-tight text-gray-800 text-justify">Esta dimensión también se le conoce, o es llamada por
+                    otros estudios, como alfabetización digital o capital digital.</p>
+
+                <div class="mt-12">
+                    <div class="md:grid md:grid-cols-12 md:gap-6 mb-8">
+                        <div class="mt-5 md:mt-0 md:col-start-2 md:col-span-10 md:rounded-md shadow">
+                            <div class="flex items-center px-4 sm:px-6 pt-4 pb-3 bg-white border-b border-bluegray-200 rounded-md">
+                                <img src="public/img/bdap.png" alt="Brecha Digital Multidimensional">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="py-5">
+                    <div class="border-t border-gray-200"></div>
+                </div>
+
+            </div>
+        </div>
+        <div class=" container mx-auto sm:px-6 lg:px-8">
+            <div class="relative mb-8">
+                <!-- <div class="md:grid md:grid-cols-12 md:gap-6 "> -->
+                    <h3 class="font-bold text-2xl text-center text-gray-700 mt-8 mb-4 uppercase">Power BI</h3>
+                    <div class="mt-5 md:mt-0 md:col-start-2 md:col-span-10 rounded-md shadow bg-white pt-3">
+                        
+                        <iframe class="w-full aspect-video"
+                            src="https://app.powerbi.com/view?r=eyJrIjoiYzI5MDA2NTgtMGNkZi00NWE5LWFkMzUtMjZhYTJlYzZkNWI1IiwidCI6IjFhMDY3M2M2LTI0ZTEtNDc2ZC1iYjRkLWJhNmE5MWEzYzU4OCIsImMiOjR9&pageName=ReportSection"
+                            title="YouTube video player" frameborder="0"></iframe>
+                    </div>
+                <!-- </div> -->
+            </div>
+        </div>
+
+    </main>
+    <footer class="bg-gray-800 pt-4 w-full">
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <div class="grid grid-cols-12 gap-y-5 py-6 items-center">
+                <div class="col-span-12 text-white">
+                    <ul class="mb-3 text-center">
+                        <li><p class="grey-text text-lighten-3  font-bold">Digitalízate</p></li>
+                        <!-- <li><p class="grey-text text-lighten-3">Ing. Jose Luis Cabra López</p></li>
+                        <li><p class="grey-text text-lighten-3 mt-3">Julio Cesar Calderón García</p></li>
+                        <li><p class="grey-text text-lighten-3">Zharick Lisbeth Alba Moreno</p></li> -->
+                        <li class="flex justify-center my-2 gap-3">
+                            <a class="grey-text text-lighten-3 hover:text-lime-500" href="public/pdf/digitalizate.pdf" target="_blank" title="Video">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-file-earmark-pdf-fill" viewBox="0 0 16 16">
+                                    <path d="M5.523 12.424c.14-.082.293-.162.459-.238a7.878 7.878 0 0 1-.45.606c-.28.337-.498.516-.635.572a.266.266 0 0 1-.035.012.282.282 0 0 1-.026-.044c-.056-.11-.054-.216.04-.36.106-.165.319-.354.647-.548zm2.455-1.647c-.119.025-.237.05-.356.078a21.148 21.148 0 0 0 .5-1.05 12.045 12.045 0 0 0 .51.858c-.217.032-.436.07-.654.114zm2.525.939a3.881 3.881 0 0 1-.435-.41c.228.005.434.022.612.054.317.057.466.147.518.209a.095.095 0 0 1 .026.064.436.436 0 0 1-.06.2.307.307 0 0 1-.094.124.107.107 0 0 1-.069.015c-.09-.003-.258-.066-.498-.256zM8.278 6.97c-.04.244-.108.524-.2.829a4.86 4.86 0 0 1-.089-.346c-.076-.353-.087-.63-.046-.822.038-.177.11-.248.196-.283a.517.517 0 0 1 .145-.04c.013.03.028.092.032.198.005.122-.007.277-.038.465z" />
+                                    <path fill-rule="evenodd" d="M4 0h5.293A1 1 0 0 1 10 .293L13.707 4a1 1 0 0 1 .293.707V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm5.5 1.5v2a1 1 0 0 0 1 1h2l-3-3zM4.165 13.668c.09.18.23.343.438.419.207.075.412.04.58-.03.318-.13.635-.436.926-.786.333-.401.683-.927 1.021-1.51a11.651 11.651 0 0 1 1.997-.406c.3.383.61.713.91.95.28.22.603.403.934.417a.856.856 0 0 0 .51-.138c.155-.101.27-.247.354-.416.09-.181.145-.37.138-.563a.844.844 0 0 0-.2-.518c-.226-.27-.596-.4-.96-.465a5.76 5.76 0 0 0-1.335-.05 10.954 10.954 0 0 1-.98-1.686c.25-.66.437-1.284.52-1.794.036-.218.055-.426.048-.614a1.238 1.238 0 0 0-.127-.538.7.7 0 0 0-.477-.365c-.202-.043-.41 0-.601.077-.377.15-.576.47-.651.823-.073.34-.04.736.046 1.136.088.406.238.848.43 1.295a19.697 19.697 0 0 1-1.062 2.227 7.662 7.662 0 0 0-1.482.645c-.37.22-.699.48-.897.787-.21.326-.275.714-.08 1.103z" />
+                                </svg>
+                            </a>
+
+                            <a class="grey-text text-lighten-3 hover:text-lime-500" href="https://www.youtube.com/watch?v=NA47TVEHOAI" target="_blank" title="Presentación">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+                                </svg>
+                            </a>
+                            <a class="grey-text text-lighten-3 hover:text-lime-500" href="https://github.com/juliansfreelance" target="_blank" title="GitHub">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                                </svg>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-span-12">
+                    <p class="text-gray-500 text-center text-xs px-5">El objetivo de este proyecto es exponer el Índice de Brecha Digital para Colombia.</p>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gray-900">
+            <div class="container mx-auto py-4 relative md:flex flex-row items-center w-full justify-center z-0">
+                <p class="font-normal text-white opacity-50 text-center text-xs ml-3">© 2022 Ucompensa Facultad de Ingeniería.</p>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="//unpkg.com/alpinejs" defer></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="public/js/script.js"></script>
+<script type="module" src="public/js/app.js"></script>
+
+</body>
+
+</html>

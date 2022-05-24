@@ -1,0 +1,84 @@
+@charset "UTF-8";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+::-webkit-scrollbar-thumb {
+    background: #6bc048;
+    border: none;
+    border-radius: 4px;
+
+}
+::-webkit-scrollbar-track {
+    background: #ccc;
+    border: none;
+    border-radius: 4px;
+
+}
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+::-webkit-scrollbar-track-piece:start {
+    padding-left: 10px;
+}
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+html,
+body {
+    scrollbar-width: thin !important;
+    scrollbar-color: #6bc048 #ccc !important;
+}
+html {
+    -webkit-font-smoothing: antialiased;
+    background: #1F2937;
+}
+
+.heartbeat {
+    animation: heartbeat 1.2s infinite;
+}
+@keyframes heartbeat {
+    0% {
+        -webkit-transform:scale(0.75);
+        transform:scale(0.75)
+    }
+    20% {
+        -webkit-transform:scale(1);
+        transform:scale(1)
+    }
+    40% {
+        -webkit-transform:scale(0.75);
+        transform:scale(0.75)
+    }
+    60% {
+        -webkit-transform:scale(1);
+        transform:scale(1)
+    }
+    80% {
+        -webkit-transform:scale(0.75);
+        transform:scale(0.75)
+    }
+    100% {
+        -webkit-transform:scale(0.75);
+        transform:scale(0.75)
+    }
+}
+h3{
+padding-top: 30px;
+line-height: 100px;
+height: 100px;
+background: url('../img/bandera.svg');
+background-size: auto 100%;
+background-repeat: no-repeat;
+background-position: 50% center;
+color: white!important;
+margin-bottom:40px!important;
+}
