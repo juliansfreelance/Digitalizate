@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_NPxqsNs1EeyH3YogoZ0UhQ" name="MySQL" id="_3yu6UNs0EeyH3YogoZ0UhQ" label="MySQL" dataPackage="_RBVQ8NtaEeyH3YogoZ0UhQ" DatabaseType="MySQL" DriverClass="com.mysql.cj.jdbc.Driver" URL="jdbc:mysql://127.0.0.1:3306/digitalizate?noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1" dbVersionString="MYSQL_8" Port="3306" Username="root" Password="" ServerName="127.0.0.1" DatasourceName="" FileFieldName="" SID="digitalizate" SqlSynthax="" StringQuote="" NullChar="" DbmsId="mysql_id" ProductId="MYSQL" AdditionalParams="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1" StandardSQL="true" SQLMode="false" UiSchema="">
+    <taggedValue xmi:id="_NPyRwNs1EeyH3YogoZ0UhQ" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_NQGa0Ns1EeyH3YogoZ0UhQ" tag="package filter" value=""/>
+    <taggedValue xmi:id="_NQQL0Ns1EeyH3YogoZ0UhQ" tag="Status" value=""/>
+    <taggedValue xmi:id="_NQQL0ds1EeyH3YogoZ0UhQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_NQQL0ts1EeyH3YogoZ0UhQ" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_NQQL09s1EeyH3YogoZ0UhQ" tag="Description" value=""/>
+    <taggedValue xmi:id="_NQQL1Ns1EeyH3YogoZ0UhQ" tag="Author" value=""/>
+    <taggedValue xmi:id="_NQQL1ds1EeyH3YogoZ0UhQ" tag="otherParameter"/>
+    <taggedValue xmi:id="_OVWLoNs1EeyH3YogoZ0UhQ" tag="DB ProductName" value="MySQL"/>
+    <taggedValue xmi:id="_OVWLods1EeyH3YogoZ0UhQ" tag="DB ProductVersion" value="10.4.24-MariaDB"/>
+    <taggedValue xmi:id="_OVWLots1EeyH3YogoZ0UhQ" tag="DB IdentifierQuoteString" value="`"/>
+    <parameters xmi:id="_NPyRwds1EeyH3YogoZ0UhQ" key="CONN_PARA_KEY_USERNAME" value="root"/>
+    <parameters xmi:id="_QH5uYNs1EeyH3YogoZ0UhQ" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_RBVQ8NtaEeyH3YogoZ0UhQ" name="digitalizate" dataManager="_NPxqsNs1EeyH3YogoZ0UhQ"/>
+</xmi:XMI>

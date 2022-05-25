@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:FileExcelConnection xmi:id="_gYBowdtHEeyH3YogoZ0UhQ" name="Indicadores" id="_gYBowNtHEeyH3YogoZ0UhQ" dataPackage="_gYBowttHEeyH3YogoZ0UhQ" Server="Localhost 127.0.0.1" FilePath="C:/Users/Pixel/OneDrive/Escritorio/digitalizate.xlsx" Encoding="UTF-8" UseHeader="true" HeaderValue="1" FirstLineCaption="true" SheetName="Indicadores" firstColumn="1" thousandSeparator="','" decimalSeparator="'.'" sheetList="Indicadores:w&#xA;">
+    <sheetColumns>A</sheetColumns>
+    <sheetColumns>B</sheetColumns>
+    <sheetColumns>C</sheetColumns>
+    <sheetColumns>D</sheetColumns>
+    <sheetColumns>E</sheetColumns>
+    <sheetColumns>F</sheetColumns>
+    <sheetColumns>G</sheetColumns>
+    <sheetColumns>H</sheetColumns>
+  </TalendMetadata:FileExcelConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_gYBowttHEeyH3YogoZ0UhQ" name="default" dataManager="_gYBowdtHEeyH3YogoZ0UhQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_gYBow9tHEeyH3YogoZ0UhQ" id="_alN8oNtHEeyH3YogoZ0UhQ" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_gYBoxNtHEeyH3YogoZ0UhQ" label="idIndicador" length="2" talendType="id_Integer" key="true" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_gYBoxdtHEeyH3YogoZ0UhQ" label="idCategoria" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_gYBoxttHEeyH3YogoZ0UhQ" label="codigo" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_gYBox9tHEeyH3YogoZ0UhQ" label="descripcion" length="201" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_gYBoyNtHEeyH3YogoZ0UhQ" label="peso" length="-1" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_gYBoydtHEeyH3YogoZ0UhQ" label="minimo" length="-1" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_gYBoyttHEeyH3YogoZ0UhQ" label="maximo" length="-1" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_gYBoy9tHEeyH3YogoZ0UhQ" label="idFuente" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
